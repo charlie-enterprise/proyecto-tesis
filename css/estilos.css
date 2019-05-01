@@ -27,6 +27,12 @@ valores */
 /* gris claro = #626262 */
 /* background gris = #1b2127 */
 /* celeste = #026fff */
+
+/*  color claro #f3f9fb
+color oscuro #0f0a3c
+color lighdark #1f3c88
+color light #5893d4
+Color contraste # f7b633*/
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?bqb2fe');
@@ -58,7 +64,7 @@ valores */
   content: "\e900";
 }
 
-@keyframes pop-in {
+/* @keyframes pop-in {
   0% {
     opacity: 0;
     transform: translateY(-4rem) scale(.8);
@@ -67,7 +73,7 @@ valores */
     opacity: 1;
     transform: none;
   }
-}
+} */
 
 body {
   font-family: 'Chakra Petch', sans-serif;
@@ -89,23 +95,23 @@ h1 {
   font-size: 30px;
   line-height: 1.5;
   letter-spacing: -.2px;
-  color: #cdffeb;
+  color: #f3f9fb;
   margin: 0;
     /* margin: 100px 150px 70px 30px; */
   /* text-transform: uppercase; */
   /* text-decoration: dashed; */
 }
 h1 strong {
-  color: #009f9d;
+  color: #f7b633;
 }
-.heroletter {
+/* .heroletter {
   animation-delay: 0.6s;
 }
 
 .herostrong{
   animation-delay: 0.8s
-}
-}
+} */
+
 h2 {
   color: #0f0a3c;
   text-transform: uppercase;
@@ -115,10 +121,10 @@ h2 {
   margin-bottom: 40px;
 }
 
-.animated-pop-in {
+/* .animated-pop-in {
   animation: pop-in 1s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
   opacity: 0;
-}
+} */
 
 
 .hero {
@@ -155,7 +161,7 @@ h2 {
   /* border-top-color: red;
   border-top-width: 15px;
   border-top-style: solid; */
-  border: 1px solid #07456f;
+  border: 1px solid #0f0a3c;
   border-radius: 10px;
   /* border-top-left-radius: 50px;
   border-top-right-radius: 10px;
@@ -167,7 +173,7 @@ h2 {
   margin-left
   margin-top */
   padding: 20px;
-  background: #cdffeb;
+  background: #f3f9fb;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -179,8 +185,9 @@ h2 {
   margin: 10px 0;
 }
 .project-description {
-  font-size: 20px;
+  font-size: 25px;
   text-align: justify;
+  color: #0f0a3c;
 }
 .project strong {
   font-family: 'Chakra Petch', sans-serif;
@@ -194,6 +201,7 @@ h2 {
   margin-top: 1em;
   margin-bottom: 10px;
   text-align: center;
+  color: #0f0a3c;
 }
 
 
@@ -231,7 +239,7 @@ figure {
 }
 
 .header a {
-  color: #cdffeb;
+  color: #f3f9fb;
   text-decoration: none;
 }
 .menu {
@@ -268,7 +276,7 @@ figure {
 }
 
 .footer {
-  color: #cdffeb;
+  color: #f3f9fb;
   background-color: #0f0a3c;
   display: flex;
   align-items: center;
@@ -310,10 +318,12 @@ figure {
 .event-detail {
   margin: 20px 40px;
   margin-top: -40px;
-  background-color: white;
+  background-color: rgba(243, 249, 251, .75);
   position: relative;
   padding: 20px;
   text-align: center;
+  border: 1px solid #5893d4;
+  border-radius: 5px;
 }
 .event-description {
   text-align: left;
@@ -328,8 +338,8 @@ figure {
 }
 
 .contact {
-  background-color: #07456f;
-  color: #cdffeb;
+  background-color: #5893d4;
+  color: #f3f9fb;
   height: 150px;
   display: flex;
   align-items: center;
@@ -415,7 +425,7 @@ figure {
   z-index: 4;
   left: 5px;
   top: 5px;
-  color: #cdffeb;
+  color: #f3f9fb;
 }
 
 /* desktop first que empieces desde el MQ más grande */
