@@ -1,38 +1,25 @@
-/* reglas
-selectores
-declaraciones
-propiedades
-valores */
 
 
-/* seletor de etiqueta  header - section - article - nav */
-/* header {
-  background: pink;
-  color: red
-} */
+/* .................Variables----------------------*/
 
-/* selector descendente  */
-/* body header div nav ol li a  */
-
-/* selector de clase . */
-
-/* .link */
-
-/* selector de id # */
-/* #portafolio */
-
+:root{
+  --bluedark-color:#0f0a3c;
+  --bluemed-color:#1f3c88;
+  --light-color:#f3f9fb;
+  --bluelightdark-color:#5893d4;
+  --yellow-color:#f7b633;
+  --fondo-light:#fafafa;
+  --colorfondo:rgba(15, 10, 60, .85 );
+  --colorevento:rgba(243, 249, 251, .75);
+  --filtrohero:brightness(0.5);
+  --fuente:'Chakra Petch', sans-serif;
+}
 
 
-/* gris oscuro = #1d252c */
-/* gris claro = #626262 */
-/* background gris = #1b2127 */
-/* celeste = #026fff */
+/* .................Variables--------------------*/
 
-/*  color claro #f3f9fb
-color oscuro #0f0a3c
-color lighdark #1f3c88
-color light #5893d4
-Color contraste # f7b633*/
+/* -----------fuentes paquetes ----*/
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?bqb2fe');
@@ -63,6 +50,7 @@ Color contraste # f7b633*/
 .icon-menu:before {
   content: "\e900";
 }
+/* -----------fuentes paquetes ----*/
 
 /* @keyframes pop-in {
   0% {
@@ -76,155 +64,20 @@ Color contraste # f7b633*/
 } */
 
 body {
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: var(--fuente);
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-  font-family: 'Chakra Petch', sans-serif;
-  font-weight: normal;
-  /* font-style: italic; */
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 1.5;
-  letter-spacing: -.2px;
-  color: #f3f9fb;
-  margin: 0;
-    /* margin: 100px 150px 70px 30px; */
-  /* text-transform: uppercase; */
-  /* text-decoration: dashed; */
-}
-h1 strong {
-  color: #f7b633;
-}
-/* .heroletter {
-  animation-delay: 0.6s;
-}
-
-.herostrong{
-  animation-delay: 0.8s
-} */
-
-h2 {
-  color: #0f0a3c;
-  text-transform: uppercase;
-  font-family: 'Chakra Petch', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-/* .animated-pop-in {
-  animation: pop-in 1s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
-  opacity: 0;
-} */
-
-
-.hero {
-  height: 300px;
-  /* background-image: url('../images/hero.jpg'); */
-  background-color: #0f0a3c;
-  /* background-size: 500px 300px; */
-  /* background-repeat: no-repeat; */
-  /* background-position-x: right; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.hero-image{
-  object-fit: cover;
-  animation-delay: 0.3s;
-}
-
-
-.portfolio {
-  background: #fafafa;
-  padding: 20px;
-  /* background: red; */
-}
-
-.project {
-  /* border-top: 10px solid red;
-  border-right: 10px solid green;
-  border-left: 10px solid orange;
-  border-bottom: 10px solid pink; */
-  /* color: blue; */
-  /* border-top-color: red;
-  border-top-width: 15px;
-  border-top-style: solid; */
-  border: 1px solid #0f0a3c;
-  border-radius: 10px;
-  /* border-top-left-radius: 50px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
-  /* margin: 10px; */
-  margin-bottom: 15px;
-  /* margin-right
-  margin-left
-  margin-top */
-  padding: 20px;
-  background: #f3f9fb;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.project-course,
-.project-date,
-.project-url {
-  margin: 10px 0;
-}
-.project-description {
-  font-size: 25px;
-  text-align: justify;
-  color: #0f0a3c;
-}
-.project strong {
-  font-family: 'Chakra Petch', sans-serif;
-}
-/* .project-date {
-  margin: 10px 0;
-} */
-
-.project-title {
-  font-size: 30px;
-  margin-top: 1em;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #0f0a3c;
-}
-
-
-.project-details {
-  width: 100%;
-}
-
-.project-imageContainer {
-  width: 50%;
-}
-
-.project-imageContainer img {
-  max-width: 100%;
-}
-
+/*  .------------header----------------------------------------*/
 .header {
-  background-color: #0f0a3c;
-  color: white;
+  background-color:var(--bluedark-color);
+  color: var(light-color);
   display: flex;
   height: 70px;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
 }
 
 ol,
@@ -259,6 +112,118 @@ figure {
   padding: 0 10px;
 }
 
+/*  .------------header----------------------------------------*/
+/*  --------------------------Texto----------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: var(--fuente);
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  color: var(--light-color);
+  margin: 0;
+}
+h1 strong {
+  color: var(--yellow-color);
+}
+
+/* .heroletter {
+  animation-delay: 0.6s;
+}
+
+.herostrong{
+  animation-delay: 0.8s
+} */
+
+h2 {
+  color: var(--bluedark-color);
+  text-transform: uppercase;
+  font-family: var(--fuente);
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+/*  ----------------texto----------------------------*/
+
+/* .animated-pop-in {
+  animation: pop-in 1s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+} */
+
+/*  ---------------------------hero------------------------------------*/
+.hero {
+  height: 300px;
+  background-color: var(--bluedark-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero-image{
+  object-fit: cover;
+  animation-delay: 0.3s;
+
+  /*  --------------------hero--------------------------*/
+  /* -----------------------Proyecto---------------------- */
+}
+.portfolio {
+  background: var(--fondo-light);
+  padding: 1.2em;
+}
+.project {
+  border: 1px solid var(--bluelightdark);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+.project-description {
+  font-size: 25px;
+  text-align: justify;
+  color: var(--bluedark-color);
+}
+.project strong {
+  font-family: var(--fuente);
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 1em;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #0f0a3c;
+}
+.project-details {
+  width: 100%;
+}
+
+.project-imageContainer {
+  width: 50%;
+}
+
+.project-imageContainer img {
+  max-width: 100%;
+}
+/*  ---------------------------Poryecto----------------------------*/
+
+
 .flexbox {
   display: flex;
   /* flex-wrap: nowrap; */
@@ -273,26 +238,6 @@ figure {
   border: 1px solid red;
 
   flex-shrink: 0;
-}
-
-.footer {
-  color: #f3f9fb;
-  background-color: #0f0a3c;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer img {
-  vertical-align: middle;
-  margin:1em auto;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-  ope
 }
 
 .event-list {
@@ -311,7 +256,7 @@ figure {
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background: #0f0a3c;
+  background: var(--bluedark-color);
 }
 .event img {
   width: 480px;
@@ -321,21 +266,21 @@ figure {
 .event-detail {
   margin: 20px 40px;
   margin-top: -40px;
-  background-color: rgba(243, 249, 251, .75);
+  background-color: var(--colorevento);
   position: relative;
   padding: 20px;
   text-align: center;
-  border: 1px solid #5893d4;
+  border: 1px solid var(--bluelightdark-color);
   border-radius: 5px;
 }
 .event-description {
     text-align: center;
     font-size: 1em;
-    color: #0f0a3c;
+    color: var(--bluedark-color);
   }
 
 .event-url {
-  color: #0f0a3c;
+  color: var(--bluedark-color);
   border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
@@ -343,8 +288,8 @@ figure {
 }
 
 .contact {
-  background-color: #5893d4;
-  color: #f3f9fb;
+  background-color: var(--bluelightdark-color);
+  color: var(--light-color);
   height: 150px;
   display: flex;
   align-items: center;
@@ -375,8 +320,41 @@ figure {
 .social-link.instagram {
   background-image: url('../images/instagram.svg');
 }
+.container {
+  /* border: 1px solid red; */
+  max-width: 1000px;
+  /* width: 100%; */
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
 
+/*  ------------footer---------------------------*/
+.footer {
+  color: var(--light-color);
+  background-color: var(--bluedark-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.footer img {
+  vertical-align: middle;
+  margin:1em auto;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  ope
+}
+/*  .-------------------------footer-------------------------------*/
+/*
 .form-email input {
   border-color: #cdffeb;
   border-style: solid;
@@ -403,26 +381,15 @@ figure {
 
 .form-email h3 {
   font-family: 'Chakra Petch', sans-serif;
-}
+} */
 
-.container {
-  /* border: 1px solid red; */
-  max-width: 1000px;
-  /* width: 100%; */
-  flex: 1;
-  margin: 0 auto;
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  height: inherit;
-  flex-wrap: inherit;
-}
 
+/* ----------------buergerbotom--------------------- */
 .burger-button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #0f0a3c;
+  background-color: var(--bluedark-color);
   display: none;
   line-height: 40px;
   text-align: center;
@@ -430,10 +397,10 @@ figure {
   z-index: 4;
   left: 5px;
   top: 5px;
-  color: #f3f9fb;
+  color: var(--light-color);
 }
 
-/* desktop first que empieces desde el MQ más grande */
+/*----------------------------- Media queries.---1023----------------*/
 
 @media screen and (max-width: 1023px) {
   .event-list-title {
@@ -497,7 +464,7 @@ figure {
   position: relative;
 }
 .hero-image{
-  filter:brightness(0.5)
+  filter: var(--filtrohero);
 }
 h2{
   text-align: center;
@@ -510,6 +477,7 @@ button{
   margin: 0 auto;
 }
 
+/*----------------------------- Media queries.---767px----------------*/
 @media screen and (max-width: 767px) {
   h2 {
     font-size: 1.2em;
@@ -542,7 +510,7 @@ button{
 
   .menu {
     position: fixed;
-    background: rgba(15, 10, 60, .85 );
+    background:var(--colorfondo);
     z-index: 3;
     top: 0;
     left: -100vw;
@@ -603,7 +571,7 @@ button{
     width: 100%;
   }
   .hero-image{
-    filter:brightness(0.4)
+    filter:var(--filtrohero);
   }
   .hero{
     text-align: center;
@@ -619,6 +587,7 @@ button{
   margin-right: 1.2em;
 }
 
+/*----------------------------- Media queries.---480px----------------*/
 
 @media screen and (max-width: 480px) {
   h1 {
@@ -660,14 +629,14 @@ button{
     text-align: center;
   }
   .hero-image{
-    filter:brightness(0.4)
+    filter:var(--filtrohero);
   }
   .footer img{
     margin:1em auto;
   }
 
 }
-
+/*----------------------------- Media queries.---320px----------------*/
 
 @media screen and (max-width: 320px) {
   h1 {
@@ -679,7 +648,7 @@ button{
     text-align: center;
   }
   .hero-image{
-    filter:brightness(0.4)
+    filter:var(--filtrohero);
   }
 
   }
@@ -696,6 +665,7 @@ button{
   }
 }
 
+/* -------------------------------------------------------------version 0.8 */
 /* paleta de colores
 tono claro #cdffeb
 tono medio #009f9d
