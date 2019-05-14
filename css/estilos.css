@@ -1,5 +1,6 @@
 
 
+
 /* .................Variables----------------------*/
 
 :root{
@@ -73,7 +74,7 @@ body {
   background-color:var(--bluedark-color);
   color: var(light-color);
   display: flex;
-  height: 70px;
+  height: 80px;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -92,7 +93,7 @@ figure {
 }
 
 .header a {
-  color: #f3f9fb;
+  color: var(--light-color);
   text-decoration: none;
 }
 .menu {
@@ -111,7 +112,12 @@ figure {
   height: inherit;
   padding: 0 10px;
 }
-
+ .header a:hover{
+   color: var(--yellow-color);
+ }
+.header img{
+  padding-top: 2.5px;
+}
 /*  .------------header----------------------------------------*/
 /*  --------------------------Texto----------------------*/
 h1,
@@ -125,7 +131,7 @@ h6{
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 33px;
   line-height: 1.5;
   letter-spacing: -.2px;
   color: var(--light-color);
@@ -160,16 +166,14 @@ h2 {
 
 /*  ---------------------------hero------------------------------------*/
 .hero {
-  height: 300px;
+  height: 100vh;
   background-color: var(--bluedark-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.hero-image{
-  object-fit: cover;
-  animation-delay: 0.3s;
+
 
   /*  --------------------hero--------------------------*/
   /* -----------------------Proyecto---------------------- */
@@ -285,6 +289,12 @@ h2 {
   padding: 5px 20px;
   text-decoration: none;
   border-radius: 5px;
+  background-color: var(--bluelightdark-color);
+}
+
+.event-url:hover{
+  color:var(--yellow-color);
+  font-weight: bolder;
 }
 
 .contact {
@@ -306,6 +316,10 @@ h2 {
   height: 50px;
   margin: 0 20px;
   background-size: 50px 50px;
+}
+
+.social-link:hover{
+  transform:scale(1.3);
 }
 
 .social-link.twitter {
@@ -348,11 +362,21 @@ h2 {
   margin:1em auto;
 }
 
+.footer img:hover{
+  transition-duration: 0.5s;
+  transform: scale(1.3);
+}
+
 .footer a {
   color: white;
   text-decoration: none;
-  ope
 }
+
+.footer a:hover{
+  color:var(--yellow-color);
+  font-size: 1.2em;
+}
+
 /*  .-------------------------footer-------------------------------*/
 /*
 .form-email input {
@@ -639,6 +663,13 @@ button{
 /*----------------------------- Media queries.---320px----------------*/
 
 @media screen and (max-width: 320px) {
+.header img{
+  width: 100%;
+  height: 75%;
+}
+
+
+
   h1 {
     font-size: 1.2em;
     /* background: rgba(0,0,0,.5) */
